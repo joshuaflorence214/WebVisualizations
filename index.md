@@ -1,37 +1,96 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-You can use the [editor on GitHub](https://github.com/joshuaflorence214/WebVisualizations/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-### Markdown
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather Analysis Visualization</title>
+</head>
+<body style="background-color:rgb(16, 220, 235">
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand logo" href="index.html"> 
+                    <span class="nav-color">Latitude</span></a>
+                </div>
+    
+                <div class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="temperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html"> Comparison</a></li>
+                    <li><a href="data.html"> Data</a></li>                                           
+                </div>
+            </div>      
+        </nav>
+    
 
-# TEST
-## Header 2
-### Header 3
+       
+    <div class = "container">
+        <div class="row">                          
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
 
-- Bulleted
-- List
+                            <h2>Latitude vs. X</h2>
+                            <hr>
+                            <p class="p1">Click on any plot to get an in-depth analysis.</p>
 
-1. Numbered
-2. List
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h3 class = "text-center" >vs. Max Temperture</h3>
+                                    <a href="temperature.html"><img class = "img img-responsive" src="Resources/assets/images/Fig1.png" style="width:80%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h3 class = "text-center">vs. Humidity</h3>
+                                    <a href="humidity.html"><img class = "img img-responsive" src="Resources/assets/images/Fig2.png" style="width:80%" alt=""></a></div>
+                            </div>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joshuaflorence214/WebVisualizations/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h3 class = "text-center">vs. Cloudiness</h3>
+                                    <a href="cloudiness.html"><img class = "img img-responsive" src="Resources/assets/images/Fig3.png" style="width:80%" alt=""></a></div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h3 class = "text-center">vs. Wind Speed</h3>
+                                    <a href="windspeed.html"><img class = "img img-responsive" src="Resources/assets/images/Fig4.png" style="width:80%" alt=""></a></div>
+                            </div>
+                                        
+                    </div>
+                        
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+            </div>
+        </div>
+</body>
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
